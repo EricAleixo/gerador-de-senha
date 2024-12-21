@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background:#000000ec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    position: relative;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.notificacao{
+    position: absolute;
+    top:-100%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 150px;
+    background: #040404;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease-in-out;
+}
+
+.notificacao.active{
+    top:2%;
+}
+
+.notificacao > div{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.titulo-notificacao{
+    font-size: 34px;
+    color:#fff;
+}
+
+.texto-notificacao{
+    color:#fff;
+    text-align: center;
+}
+
+.titulo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+
+.titulo-container > img{
+    width: 30%;
+}
+
+.titulo{
+    color:#ffff;
+    font-size: 40px;
+}
+
+.container-input{
+    background: #00000067;
+    padding: 20px 40px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#botao-copiar{
+    height: 20px;
+    color:#4acb09f4;
+    display: none;
+    cursor: pointer;
+}
+
+#senhaAleatoria{
+    font-size: 25px;
+    color:#ffff;
+}
+
+.container-senha{
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+    background: #00000067;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    padding: 30px
+}
+
+#number-caracteres{
+    width: 40px;
+    border:0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container-senha > div{
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+}
+
+.button{
+    margin: 5px 0;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 0;
+    background-color: #4acb09f4;
+    cursor: pointer;
+    color: #000000ec;
+    transition: 0.3s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}

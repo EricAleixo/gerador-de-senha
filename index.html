@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script defer src="assets/scripts/script.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="notificacao">
+            <div>
+                <h1 class="titulo-notificacao">Opção Inválida</h1>
+                <p class="texto-notificacao">Marque ao menos 2 opções</p>
+            </div>
+        </div>
+
+        <div class="titulo-container">
+            <img src="assets/imgs/Security-pana.svg" alt="Símbolo de segurança">
+            <h1 class="titulo">Gerar Senha</h1>
+        </div>
+        <div class="container-input">
+            <p id="senhaAleatoria">senha</p>
+            <img id="botao-copiar" src="assets/imgs/copiar-alt.png" alt="Copiar">
+        </div>
+
+        <div class="container-senha">
+            <div>
+                <input id="number-caracteres" name="number-caracteres" type="number" value="5">
+                <label for="number-caracteres">Quantidade de caracteres</label>
+            </div>
+            <div>
+                <input id="letra-maiuscula" name="letra-maiuscula" type="checkbox">
+                <label for="letra-maiuscula">Incluir letras maiúsculas</label>
+            </div>
+            <div>
+                <input id="letra-minusculas" name="letra-minusculas" type="checkbox">
+                <label for="letra-minusculas">Incluir letras minúsculas</label>
+            </div>
+            <div>
+                <input id="incluir-numero" name="incluir-numero" type="checkbox">
+                <label for="incluir-numero">Incluir número</label>
+            </div>
+            <div>
+                <input id="caracteres-especiais" name="caracteres-especiais" type="checkbox">
+                <label for="caracteres-especiais">Caractéres especiais</label>
+            </div>
+            <div>
+                <button id="butaoGerarSenha" class="button">
+                    Gerar Senha
+                </button>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
