@@ -40,7 +40,7 @@ const gerarSenha = () => {
     const inputsTrues = inputsCheckeds.filter(input => input).length
     if (inputsTrues < 2) {
         mostrarNotificacao()
-        return
+        return false
     }
 
     let senhaAleatoriaString = ""
@@ -55,6 +55,8 @@ const gerarSenha = () => {
     }
 
     senhaAleatoriaContainer.textContent = senhaAleatoria
+
+    return true
 }
 
 const mostrarBotaoCopiar = () =>{
@@ -62,8 +64,7 @@ const mostrarBotaoCopiar = () =>{
 }
 
 botaoGerarSenha.addEventListener("click",() =>{
-    gerarSenha()
-    mostrarBotaoCopiar()
+    gerarSenha() && mostrarBotaoCopiar()
 })
 
 const trocarIconeCopiar = (e) => {
